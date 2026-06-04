@@ -25,16 +25,9 @@ Automates the `messaging-model` release process:
 
 ## Install
 
-### Option A: Local install (for development)
-```bash
-claude plugin install ./messaging-team-claude-plugin
 ```
-
-### Option B: From Artifactory npm
-```bash
-# Coming soon — once published to internal registry
-npm install -g @accolade/messaging-team-claude
-claude plugin install @accolade/messaging-team-claude
+/plugin marketplace add konciergeMD/bsc-claude-plugin
+/plugin install messaging-team-claude@bsc-claude-plugin
 ```
 
 ## Usage
