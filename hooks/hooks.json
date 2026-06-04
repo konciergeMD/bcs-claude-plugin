@@ -1,14 +1,16 @@
 {
-  "PostToolUse": [
-    {
-      "matcher": "Write|Edit",
-      "hooks": [
-        {
-          "type": "command",
-          "command": "jq -r '.tool_input.file_path // .tool_input.path // empty' | { read -r f; [[ \"$f\" == *.py ]] && uvx ruff check --fix \"$f\" && uvx ruff format \"$f\"; } 2>/dev/null || true",
-          "statusMessage": "Running ruff..."
-        }
-      ]
-    }
-  ]
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "Write|Edit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "jq -r '.tool_input.file_path // .tool_input.path // empty' | { read -r f; [[ \"$f\" == *.py ]] && uvx ruff check --fix \"$f\" && uvx ruff format \"$f\"; } 2>/dev/null || true",
+            "statusMessage": "Running ruff..."
+          }
+        ]
+      }
+    ]
+  }
 }
