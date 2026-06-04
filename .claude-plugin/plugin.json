@@ -1,7 +1,7 @@
 {
   "name": "messaging-team-claude",
   "displayName": "Accolade Messaging Team",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Claude Code plugin for the Accolade messaging team — ruff auto-fix on Python edits, commit+PR skill, and messaging-model release automation.",
   "author": {
     "name": "Accolade Messaging Team"
