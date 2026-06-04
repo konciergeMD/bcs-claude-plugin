@@ -1,0 +1,13 @@
+{
+  "name": "@accolade/messaging-team-claude",
+  "version": "1.0.0",
+  "description": "Claude Code plugin for the Accolade messaging team",
+  "files": [
+    "claude-plugin.json",
+    "settings.json",
+    "skills/"
+  ],
+  "keywords": ["claude", "claude-code", "plugin"],
+  "license": "UNLICENSED",
+  "private": true
+}
