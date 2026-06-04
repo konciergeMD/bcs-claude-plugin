@@ -1,0 +1,14 @@
+{
+  "name": "bsc-claude-plugin",
+  "description": "Claude Code plugins for the Accolade BSC team",
+  "owner": {
+    "name": "Accolade Messaging Team"
+  },
+  "plugins": [
+    {
+      "name": "messaging-team-claude",
+      "description": "ruff auto-fix hook, commit+PR skill, and messaging-model release automation",
+      "source": "./"
+    }
+  ]
+}
